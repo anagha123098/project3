@@ -1,0 +1,9 @@
+
+.district-page-container {
+  background-image: url('https://images.pexels.com/photos/3633950/pexels-photo-3633950.jpeg'); 
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat;
+  min-height: 100vh;           
+  padding: 50px 20px;          
+}

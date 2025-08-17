@@ -1,0 +1,8 @@
+<div class="card" style="width: 18rem;">
+   <img [src]="imglink" class="card-img-top" alt="{{title}}">
+  <div class="card-body">
+    <h5 class="card-title">{{title}}</h5>
+    <p class="card-text">{{desc}}</p>
+    <a [routerLink]="['/districts', id]" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>

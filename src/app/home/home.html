@@ -1,0 +1,48 @@
+
+<div class="home-hero">
+  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1500&auto=format&fit=crop" alt="Travel Kerala" class="hero-img">
+  <div class="hero-text">
+    <h1>Welcome to Kerala Travel Guide</h1>
+    <p>Explore the beauty of God's Own Country</p>
+  </div>
+</div>
+<div class="home-featured-cards container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-4" *ngFor="let district of featuredDistricts">
+      <div class="home-district-box" [routerLink]="['/districts', district.id]">
+        <h4 class="home-district-title">{{ district.title }}</h4>
+        <img [src]="district.image" alt="{{ district.title }}" class="home-district-img">
+        <p class="home-district-desc">{{ district.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="home-about container my-5">
+  <h2 class="text-center mb-4">About Us</h2>
+  <p class="text-center">
+    Kerala Travel Guide is your ultimate companion to explore the serene beauty, rich culture, and diverse landscapes of Kerala. From pristine beaches to scenic hill stations and backwaters, we provide the best insights for travelers.
+  </p>
+</div>
+
+<div class="home-details container my-5">
+  <h3 class="text-center mb-4">Why Travel With Us?</h3>
+  <div class="row text-center">
+    <div class="col-md-4 mb-3">
+      <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=80&w=300&auto=format&fit=crop" alt="Tour Packages" class="feature-img">
+      <h5 class="mt-3">Custom Tour Packages</h5>
+      <p>Personalized itineraries to suit your travel preferences.</p>
+    </div>
+    <div class="col-md-4 mb-3">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=300&auto=format&fit=crop" alt="Best Guides" class="feature-img">
+      <h5 class="mt-3">Experienced Guides</h5>
+      <p>Knowledgeable local guides to enhance your travel experience.</p>
+    </div>
+    <div class="col-md-4 mb-3">
+      <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=300&auto=format&fit=crop" alt="Safety" class="feature-img">
+      <h5 class="mt-3">Safe & Reliable</h5>
+      <p>We ensure safe and reliable travel services across Kerala.</p>
+    </div>
+  </div>
+</div>

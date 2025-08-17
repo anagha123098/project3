@@ -1,0 +1,17 @@
+<div class="district-page-container">
+<div class="row">
+@for(item of districts; track item.id){
+ <div class="col-md-4 mb-3">
+<app-card
+
+
+[title]=item.title
+[desc]=item.description
+[imglink]=item.image
+[id]=item.id
+
+></app-card>
+</div>
+}
+</div>
+</div>
